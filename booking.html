@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+	<title>Manas Sport - бронь мест</title>
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="icon" href="./img/favicon.png">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<input type="checkbox" name='' id='sidebar-toggle'>
+
+	<div class="sidebar">
+		<div class="sidebar-brand">
+			<div class="brand-flex">
+				<a target="_blank" href="http://intl.manas.edu.kg/ru"><img src="img/ktmu_logo.png" width='40px' alt="logo"></a>
+
+
+				<div class="brand-icons">
+					<span class="las la-moon "></span>
+					<span class="las la-sun active"></span>
+
+
+				</div>
+
+			</div>
+			
+			<div class="sidebar-main">
+
+				<div class="sidebar-user">
+					<img src="img/Logo.png" alt="user image"/>
+					<div>
+						<h3>Manas Sport</h3>
+					</div>
+				</div>
+
+				<div class="sidebar-menu">
+
+
+
+					<div class="menu-head">
+						<span>Категория</span>
+					</div>
+
+					<div class="scroll-section" id='scroll-id'>
+						<ul>
+							<li>
+
+								<a href="">
+
+									<span class="lab la-cloudsmith"></span>
+
+									Футбол
+
+								</a>
+
+							</li>
+
+
+							<li>
+
+								<a href="">
+
+									<span class="lab la-cloudsmith"></span>
+
+									Баскетбол
+
+								</a>
+
+							</li>
+
+
+
+							
+
+							<li>
+
+								<a href="">
+
+									<span class="lab la-cloudsmith"></span>
+
+									Стол тенниси
+
+								</a>
+
+							</li>
+							
+
+							<li>
+
+								<a href="">
+
+									<span class="lab la-cloudsmith"></span>
+
+									Теннис
+
+								</a>
+
+							</li>
+
+
+
+							<li>
+
+								<a href="">
+
+									<span class="lab la-cloudsmith"></span>
+
+									Бильярд
+
+								</a>
+
+							</li>
+
+
+							<li>
+
+								<a href="">
+
+									<span class="lab la-cloudsmith"></span>
+
+									Шахматы
+
+								</a>
+
+							</li>
+
+						</ul>
+
+
+					</div>
+
+
+
+
+
+					<br />
+					<div class="menu-head">
+						<span>Башка</span>
+					</div>
+					<ul>
+
+
+
+						<li><a href=""><span class="las la-sign-in-alt"></span>
+
+											Админ катары кирүү
+
+							</a>
+						</li>
+
+
+
+
+
+						<li><a href=""><span class="las la-question-circle "></span>
+
+								Суроо-жооптор
+
+							</a>
+						</li>
+					</ul>
+
+
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="main-content">
+
+		<header>
+			<div class="menu-toggle">
+				<label for="sidebar-toggle"> <span class="las la-bars"></span></label>
+			</div>
+
+
+
+			<div class='header-icons'>
+				<span class="las la-globe-americas"></span>
+				<span>KG</span>
+			
+				<span>TR</span>
+		
+
+			</div>
+
+
+
+		</header>
+
+		<main>
+
+		<div class="page-header">
+				<div>
+					<h2 style='font-weight: 700;'>Секцияга жазылуу</h2>
+					<small></small>
+				</div>
+				<div class="header-actions">
+
+					<a href='./booking.html'>
+						<button>
+							<span class="las la-lock"></span>
+							Аянтчалар
+						</button>
+					</a>
+					
+					  <a href='./competition.html'>
+						<button>
+							<span class="las la-trophy"></span>
+							Мелдештер
+						</button>
+					   </a>
+					   
+						<a href='./index.html'>
+						<button>
+							<span class="las la-pen"></span>
+							Секциялар 
+						</button>
+						</a>
+
+				</div>
+			</div>
+
+
+			
+			
+				
+				<div class="jobs">
+					<br /> <br />
+					<span class="indicator even"></span>
+					<div class="table-responsive">
+						<table width="100%">
+							<tbody>
+							  <tr>
+								<td>
+								  <div></div>
+								</td>
+								<td>
+								  <div>Убактысы</div>
+								</td>
+								<td>
+								  <div>1-тайпа</div>
+								</td>
+								<td>
+								  <div>2-тайпа</div>
+								</td>
+		  
+								<td>
+								  <div>Статус</div>
+								</td>
+							  </tr>
+		  
+							  <tr>
+								<td>
+								  <div>
+									<span class="indicator-success"></span>
+								  </div>
+								</td>
+								<td>
+								  <div>08:00 - 10:00</div>
+								</td>
+								<td>
+								  <div>
+							      <!-- Modal -->
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >
+										Кошуу
+									  </button>								
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam" >Көрүү</button>
+								  </div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam2" >Көрүү</button>
+								  </div>
+								</td>
+		  
+								<td>
+								  <div>
+									<span class="success">Бош</span>
+								  </div>
+								</td>
+							  </tr>
+		  
+							  <tr>
+								<td>
+								  <div>
+									<span class="indicator-warning"></span>
+								  </div>
+								</td>
+								<td>
+								  <div>10:00 - 12:00</div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam" >Көрүү</button>
+								  </div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam2" >Көрүү</button>
+								  </div>
+								</td>
+		  
+								<td>
+								  <div>
+									<span class="warning">Орун бар</span>
+								  </div>
+								</td>
+							  </tr>
+		  
+							  <tr>
+								<td>
+								  <div>
+									<span class="indicator-success"></span>
+								  </div>
+								</td>
+								<td>
+								  <div>12:00 - 14:00</div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam" >Көрүү</button>
+								  </div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam2" >Көрүү</button>
+								  </div>
+								</td>
+		  
+								<td>
+								  <div>
+									<span class="success">Бош</span>
+								  </div>
+								</td>
+							  </tr>
+		  
+							  <tr>
+								<td>
+								  <div>
+									<span class="indicator-danger"></span>
+								  </div>
+								</td>
+								<td>
+								  <div>14:00 - 16:00</div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam" >Көрүү</button>
+								  </div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam2" >Көрүү</button>
+								  </div>
+								</td>
+		  
+								<td>
+								  <div>
+									<span class="danger">Бош эмес</span>
+								  </div>
+								</td>
+							  </tr>
+		  
+							  <tr>
+								<td>
+								  <div>
+									<span class="indicator-success"></span>
+								  </div>
+								</td>
+								<td>
+								  <div>16:00 - 18:00</div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam" >Көрүү</button>
+								  </div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam2" >Көрүү</button>
+								  </div>
+								</td>
+		  
+								<td>
+								  <div>
+									<span class="success">Бош</span>
+								  </div>
+								</td>
+							  </tr>
+		  
+							  <tr>
+								<td>
+								  <div>
+									<span class="indicator-danger"></span>
+								  </div>
+								</td>
+								<td>
+								  <div>18:00 - 20:00</div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam" >Көрүү</button>
+								  </div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam2" >Көрүү</button>
+								  </div>
+								</td>
+		  
+								<td>
+								  <div>
+									<span class="danger">Бош эмес</span>
+								  </div>
+								</td>
+							  </tr>
+		  
+							  <tr>
+								<td>
+								  <div>
+									<span class="indicator-warning"></span>
+								  </div>
+								</td>
+								<td>
+								  <div>20:00 - 22:00</div>
+								</td>
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam" >Көрүү</button>
+								</div>
+								</td>
+							
+								<td>
+								  <div>
+									<button type="button"  data-toggle="modal" data-target="#addTeam" >Кошуу</button>
+									&nbsp;
+									<button type="button"  data-toggle="modal" data-target="#watchTeam2" >Көрүү</button>
+								  </div>
+								</td>
+		  
+								<td>
+								  <div>
+									<span class="warning">Орун бар</span>
+								  </div>
+								</td>
+							  </tr>
+							</tbody>
+						  </table>
+					</div>
+				</div>
+				
+				<!-- Кошуу КОМАНДУ -->				<!-- Кошуу КОМАНДУ -->				<!-- Кошуу КОМАНДУ -->				<!-- Кошуу КОМАНДУ -->
+				<div class="modal fade" id="addTeam" tabindex="-1" role="dialog" aria-labelledby="addTeam" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="addTeam">Кошуу команду</h5>
+						
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div style='display:flex'>
+								  <input  type="text" class="form-control" style="width:30%" placeholder='Студ. номер' id="recipient-name">
+								  &emsp;
+								  <input  type="text" class="form-control"  style="width:70%"  placeholder='Аты-жөнү' id="recipient-name">
+								</div>
+								<hr/>
+								<div style='display:flex'>
+								  <input  type="text" class="form-control" style="width:30%" placeholder='Студ. номер' id="recipient-name">
+								  &emsp;
+								  <input  type="text" class="form-control" style="width:70%"  placeholder='Аты-жөнү' id="recipient-name">
+								</div>
+								<hr/>
+								<div style='display:flex'>
+								  <input  type="text" class="form-control" style="width:30%" placeholder='Студ. номер' id="recipient-name">
+								  &emsp;
+								  <input  type="text" class="form-control"  style="width:70%"  placeholder='Аты-жөнү' id="recipient-name">
+								</div>
+								<hr/>
+								<div style='display:flex'>
+								  <input  type="text" class="form-control"  style="width:30%" placeholder='Студ. номер' id="recipient-name">
+								  &emsp;
+								  <input  type="text" class="form-control" style="width:70%"   placeholder='Аты-жөнү' id="recipient-name">
+								</div>
+								<hr/>
+								<div style='display:flex'>
+								  <input  type="text" class="form-control" style="width:30%" placeholder='Студ. номер' id="recipient-name">
+								  &emsp;
+								  <input  type="text" class="form-control" style="width:70%"  placeholder='Аты-жөнү' id="recipient-name">
+								</div>
+							  </form>
+						</div>
+						<div class="modal-footer">
+						  <button class="button-danger" data-dismiss="modal">Жабуу</button>
+						  <button type="button" >Жиберүү</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+				  <!-- Көрүү 1-КОМАНДУ -->   <!-- Көрүү 1-КОМАНДУ -->   <!-- Көрүү 1-КОМАНДУ -->   <!-- Көрүү КОМАНДУ -->
+				  <div class="modal fade" id="watchTeam" tabindex="-1" role="dialog" aria-labelledby="watchTeam" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="watchTeam">1-команда</h5>
+						
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<form>
+							
+									<table width="100%">
+										<tbody>
+
+										  <tr>
+											<td>
+											  <div>Студ. номер</div>
+											</td>
+											<td>
+											  <div>Аты-жөнү.</div>
+											</td>
+										  </tr>
+
+										  <tr>
+											<td>
+											  <div>1704.01024</div>
+											</td>
+											<td>
+											  <div>Максат Заирбеков</div>
+											</td>
+										  </tr>
+
+										  <tr>
+											<td>
+											  <div>1604.02034</div>
+											</td>
+											<td>
+											  <div>Нурсултан Исмаилов</div>
+											</td>
+										  </tr>
+
+
+										  
+										</tbody>
+									</table>
+						
+							  </form>
+						</div>
+						<div class="modal-footer">
+						  <button class="button-danger" data-dismiss="modal">Жабуу</button>
+						
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+				  <!-- Көрүү 2-КОМАНДУ -->	  <!-- Көрүү 2-КОМАНДУ -->	  <!-- Көрүү 2-КОМАНДУ -->	  <!-- Көрүү 2-КОМАНДУ -->	  <!-- Көрүү 2-КОМАНДУ -->
+				  <div class="modal fade" id="watchTeam2" tabindex="-1" role="dialog" aria-labelledby="watchTeam2" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="watchTeam2">2-команда</h5>
+						
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+							<form>
+							
+									<table width="100%">
+										<tbody>
+
+										  <tr>
+											<td>
+											  <div>Студ. номер</div>
+											</td>
+											<td>
+											  <div>Аты-жөнү.</div>
+											</td>
+										  </tr>
+									
+										  <tr>
+											<td>
+											  <div>1504.24424</div>
+											</td>
+											<td>
+											  <div>Эрмек Суранчиев</div>
+											</td>
+										  </tr>
+										 
+										  <tr>
+											<td>
+											  <div>1804.92164</div>
+											</td>
+											<td>
+											  <div>Айбек Муганбердиев</div>
+											</td>
+										  </tr>
+
+
+										  
+										</tbody>
+									</table>
+						
+							  </form>
+						</div>
+						<div class="modal-footer">
+						  <button class="button-danger" data-dismiss="modal">Жабуу</button>
+						
+						</div>
+					  </div>
+					</div>
+				  </div>
+		</main>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<label for="sidebar-toggle" class="body-label"></label>
+</body>
+
+</html>

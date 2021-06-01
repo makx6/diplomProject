@@ -143,11 +143,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidebar-user img {
-
 	width: 45%;
+}
 
-
-
+.sidebar-user img:hover {
+	cursor: pointer;
 }
 
 
@@ -277,6 +277,9 @@ main {
 	margin-top: 70px;
 }
 
+a {
+	text-decoration: none;
+}
 
 .page-header {
 
@@ -290,11 +293,12 @@ main {
 	color: #fff;
 	background: #5850ec;
 	border: none;
-	font-weight: 600;
+	font-weight: 500;
 	border-radius: 3px;
 	padding: .6rem 1rem;
 	margin-left: 1rem;
 	cursor: pointer;
+	font-size:14px;
 }
 
 .header-actions button:hover {
@@ -325,13 +329,15 @@ main {
 .card-single {
 	background: #fff;
 	padding: 1rem;
-	box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 3px 2px 8px #8DA2FB;
+
 	border-radius: 8px;
 }
 
 .card-single:hover {
-	box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 3px 2px 10px #8DA2FB;
 	transition: .1s;
+	box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .card-flex {
@@ -348,6 +354,13 @@ main {
 	font-size: .9rem;
 	font-weight: 700;
 
+}
+
+
+.card-head p {
+
+	margin: 0px;
+	padding:0px;
 }
 
 .card-head small {
@@ -386,10 +399,19 @@ main {
 
 
 .jobs-grid {
-
+	
 	margin-top: 4rem;
 	display: grid;
 	grid-template-columns: auto 66%;
+	grid-gap: 3rem;
+}
+
+
+.jobs-grid-competition {
+	
+	margin-top: 4rem;
+	display: grid;
+	grid-template-columns: auto 50%;
 	grid-gap: 3rem;
 }
 
@@ -464,16 +486,23 @@ main {
 }
 
 
-span.indicator {
-	background: #c9f7f5;
+span.indicator-success {
+	background: #b7f8c6;
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
 }
 
 
-span.indicator.even {
-	background: #f4c6cb;
+span.indicator-warning {
+	background: #f0ad4e;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+}
+
+span.indicator-danger {
+	background: #f05d5d;
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
@@ -510,10 +539,59 @@ table button {
 	border-radius: 3px;
 }
 
+button {
 
-table button.even {
+	background: #8da2fb;
+	color: #fff;
+	border: 1px solid #8da2fb;
+	padding: .5rem;
+	border-radius: 3px;
+}
 
-	background:
+.button-danger {
+
+	background: #f05d5d;
+	color: #fff;
+	border: 1px solid #f05d5d;
+	padding: .5rem;
+	border-radius: 3px;
+}
+
+
+
+
+table span.success {
+
+	background: #7ae693;
+	color: #fff;
+	border: 1px solid #b7f8c6;
+	padding: .5rem;
+	width: 5.5rem;
+	text-align: center;
+	border-radius: 3px;
+}
+
+table span.warning {
+
+	background: #f0ad4e;
+	color: #fff;
+	border: 1px solid #f0ad4e;
+	padding: .5rem;
+	width: 5.5rem;
+	text-align: center;
+	border-radius: 3px;
+}
+
+
+table span.danger {
+
+	background: #f05d5d;
+	color: #fff;
+	border: 1px solid #f05d5d;
+	padding: .5rem;
+	width: 5.5rem;
+	text-align: center;
+	border-radius: 3px;
 }
 
 .table-responsive {
@@ -576,7 +654,8 @@ table button.even {
 
 	.header-actions button:first-child {
 
-		margin-left: 0rem;
+		margin-left: 1rem;
+
 
 	}
 
@@ -595,7 +674,12 @@ table button.even {
 
 	}
 
+	.header-actions button {
 
+
+		margin: 0.2rem;
+		height: 100%;
+	}
 
 
 }
@@ -615,7 +699,7 @@ table button.even {
 
 
 		margin: 0.2rem;
-
+		height: 100%;
 	}
 
 }
@@ -627,9 +711,19 @@ table button.even {
 
 
 	.header-actions {
-
 		display: flex;
 		justify-content: space-around;
+	}
+
+	.header-actions button {
+
+		height: 100%;
+
+	}
+
+	.jobs-grid-competition{
+		grid-template-columns: 100%;
+
 	}
 
 
